@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>MagicGame</title>
+</head>
+
+<body>
+       <!--Start Section-->
+    <div class="start container d-flex align-items-center flex-column">
+        
+        <div class="startText">
+            <h4 class="firstText display-4">Welcome to</h4>
+            <h3 class="secondText display-3">MagicGame</h3>
+        </div>
+
+        <div>
+            <a href="#playingGame"><button class="playButton"">Play <svg class=" downArrowSVG"
+                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                    stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5L12 21m0 0l-7.5-7.5M12 21V3" />
+                    </svg>
+                </button></a>
+        </div>
+
+    </div>
+
+    <!--Main Section-->
+    <div class="container" id="playingGame">
+        <div class="mainText container">
+            <h6 class="d-flex justify-content-center display-6">Think about a number between 1-60</h6>
+            <h6 class="d-flex justify-content-center display-6">Click the card with your number!</h6>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 d-flex justify-content-center"><input type="checkbox" id="cb1" value="1"
+                    onclick="checkCheckboxValue('cb1')" />
+                <label for="cb1"><img src="Img/table1.png" /></label>
+            </div>
+            <div class="col-md-4 d-flex justify-content-center"><input type="checkbox" id="cb2" value="2"
+                    onclick="checkCheckboxValue('cb2')" />
+                <label for="cb2"><img src="Img/table2.png" /></label>
+            </div>
+            <div class="col-md-4 d-flex justify-content-center"><input type="checkbox" id="cb3" value="4"
+                    onclick="checkCheckboxValue('cb3')" />
+                <label for="cb3"><img src="Img/table3.png" /></label>
+            </div>
+            <div class="col-md-4 d-flex justify-content-center"><input type="checkbox" id="cb4" value="8"
+                    oncdivck="checkCheckboxValue('cb4')" />
+                <label for="cb4"><img src="Img/table4.png" /></label>
+            </div>
+            <div class="col-md-4 d-flex justify-content-center"><input type="checkbox" id="cb5" value="16"
+                    onclick="checkCheckboxValue('cb5')" />
+                <label for="cb5"><img src="Img/table5.png" /></label>
+            </div>
+            <div class="col-md-4 d-flex justify-content-center"><input type="checkbox" id="cb6" value="32"
+                    onclick="checkCheckboxValue('cb6')" />
+                <label for="cb6"><img src="Img/table6.png" /></label>
+            </div>
+        </div>
+
+ <!--Coninue Button-->
+ <div class="d-flex justify-content-center mb-4">
+    <button class="continueButton" id="button" onclick="getSumOfValue(), showResult()">Continue</button>
+</div>
+    </div>
+
+   
+
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+        © 2023 Copyright:
+        <a class="text-reset fw-bold" href="https://github.com/pirnet7">NetPir7</a>
+    </div>
+    <!-- Copyright -->
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,138 @@
+/*General Stuff*/
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24,
+}
+
+body{
+  min-width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+html{
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+/*Table Section*/
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+input[type="checkbox"][id^="cb"] {
+  display: none;
+}
+
+label {
+  border: 1px solid #000000;
+  background-color: aliceblue;
+  display: block;
+  position: relative;
+  cursor: pointer;
+  width: 290px;
+  padding: 10px;
+  margin: 10px;
+}
+
+
+label:before {
+  background-color: white;
+  color: white;
+  content: " ";
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  line-height: 28px;
+  transition-duration: 0.4s;
+  transform: scale(0);
+}
+
+label  img {
+  height: auto;
+  width: 270px;
+  transition-duration: 0.2s;
+  transform-origin: 50% 50%;
+  display: flex;
+  justify-content: center;
+}
+
+
+:checked + label:before {
+  content: "✓";
+  background-color:rgba(3, 134, 248, 0.962);
+  transform: scale(1);
+}
+
+/*Start Section*/
+.start{
+  height: 100vh;
+  background-color: rgb(0, 0, 0);
+  min-width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+.startText{
+margin-bottom: 5vh;
+}
+.startText > .firstText{
+  margin-top: 15vh;
+  margin-bottom: 0px;
+  
+  text-align: start;
+}
+
+.playButton{
+  margin-top: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+  border:none;
+  border-radius: 15px;
+  font-size: 18px;
+  background-color: aqua;
+  }
+.downArrowSVG{
+  height: 20px;
+  width:auto ;
+}
+
+/*Continue Button Section*/
+.continueButton{
+  margin-top: 65px;
+  margin-bottom: 25vh;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+  border:none;
+  border-radius: 15px;
+  font-size: 18px;
+  background-color: rgb(222, 238, 252);
+}
+.continueButton:hover{
+background-color: rgb(132, 197, 254);
+}
+
+/*Main Section*/
+.mainText{
+  padding-top: 8vh;
+  padding-bottom: 10vh;
+}
+
+/*Footer Section*/
+.footer-copyright{
+  background-color: rgb(128, 128, 128);
+}
